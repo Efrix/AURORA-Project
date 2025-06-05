@@ -1,0 +1,78 @@
+{
+  "Feliz": [
+    "feliz", "contento", "alegre", "entusiasmado", "emocionado", "divertido", "genial", "maravilloso",
+    "entusiasmada", "eufórico", "optimista", "esperanzado", "satisfecho", "agradecido", "pleno",
+    "tranquilo", "sonreí", "reí", "me encantó", "disfruté", "logré", "me fue bien", "todo salió bien",
+    "estuvo bien", "estoy bien", "tuve un buen día", "me sentí increíble","bien","me gusto","me gustó mucho","rei"
+    ,"no me dio clases","me gusta mucho","amo", "me alivianó", "chido", "a toda madre", "de lujo", "me fue chido", "qué buena onda",
+    "me sentí bien", "todo fluyó", "estuvo chingón", "me la pasé bomba", "me sentí en paz",
+    "me abrazaron", "me entendieron", "me acompañaron", "me apoyaron", "me echaron porras",
+    "me reconocieron", "me valoraron", "me sentí querido", "me animé", "me motivé", "me aliviané",
+    "me alivianó", "chido", "a toda madre", "de lujo", "me fue chido", "qué buena onda",
+    "me sentí bien", "todo fluyó", "estuvo chingón", "me la pasé bomba", "me sentí en paz",
+    "me abrazaron", "me entendieron", "me acompañaron", "me apoyaron", "me echaron porras",
+    "me reconocieron", "me valoraron", "me sentí querido", "me animé", "me motivé", "me aliviané"
+    ,"esta como me guffy","me la pelaron","les gane a todos","soy el mejor","agarré vuelo"
+  ],
+  "Triste": [
+    "triste", "solo", "deprimido", "decaído", "lloré", "llorar", "desanimado", "vacío", "apagado",
+    "desmotivado", "angustiado", "me siento mal", "nostalgia", "pesar", "melancolía", "dolor",
+    "pena", "abrumado", "me fallaron", "me ignoraron", "me decepcioné", "rechazado", "no valgo",
+    "no puedo", "me siento perdido", "me hirieron", "me traicionaron","perdi","perdí","me entristese"
+    ,"me vieron la cara","me humillaron","me insultaron","me bulearon","me bullearon","me hicieron bullying"
+    ,"se burlaron de mi","se murió","se murio","me quiero matar","estoy cansado","me quiero morir"
+    ,"me quiero suicidar","me siento de la chingada","tengo problemas","no me quiere","me dejarón","me divorcié","me divorcie"
+    ,"soy adoptado","no me quieren","estoy enfermo","me fueron infiel","awitado","aguitado","ajuitado","me enfermé","me enferme"
+    ,"soy autista","soy negro","estoy triste","no me quiero","no me gusta","me odio","tengo deudas","me endeude","me endeudé"
+    ,"me ignoró", "me batearon", "me bajoneé", "me sentí menos", "me dejaron en visto",
+    "no me peló", "me mandó alv", "me mandaron alv", "me dejó en visto", "me sentí solo",
+    "estuvo feo", "me agüité bien feo", "me rompió el corazón", "me sentí chiquito",
+    "sentí que no importo", "no tengo con quién hablar", "me sentí olvidado", "me sentí vacío",
+    "no tengo ganas", "me arruinó el día", "todo salió mal", "nada me sale bien", "ando bajoneado","no estoy feliz"
+  ],
+  "Enojado": [
+    "enojado", "molesto", "furioso", "irritado", "fastidiado", "exploté", "me harté", "grité",
+    "perdí el control", "rabia", "coraje", "me cansé", "frustrado", "enojo", "odio esto", "detesto",
+    "no aguanto", "me sacó de quicio", "me desespera", "me hizo enojar", "fue injusto", "me gritaron",
+    "peleé", "discutí", "me faltaron al respeto","emputado","me faltan el respeto","me empute","me saco de onda",
+    "me pelee","me pelie","le grite","le mente la madre","me enoje","me enojé","lo insulte","lo insulté",
+    "me hizo perder el tiempo", "me colmaron", "me cagó", "me vale madres", "me reventó",
+    "ya me tienen hasta la madre", "me desesperó", "le menté la madre", "me dejó en visto y me ardí",
+    "se pasó de lanza", "se mamó", "me sacó canas verdes", "me lo chingué", "le puse un alto",
+    "me vi obligado a explotar", "me vio la cara", "le dije sus verdades", "ya me tiene harto",
+    "me brincó la vena", "me encabroné", "me hizo enojar bien feo","un hijo de la chingada"
+  ],
+  "Serio": [
+    "serio", "neutral", "indiferente", "me mantuve al margen", "reservado", "callado", "concentrado",
+    "objetivo", "analítico", "profesional", "no sentí nada", "me aislé", "observé", "reflexioné",
+    "estuve distante", "no reaccioné", "me contuve", "no expresé", "me mantuve tranquilo",
+    "no opiné", "me dio igual", "me quedé callado", "estuve al tiro", "me mantuve frío",
+    "no dije nada", "me puse en modo robot", "modo automático", "lo tomé con calma",
+    "me guardé todo", "me lo tragué", "no reaccioné como esperaba", "fui diplomático",
+    "no mostré emoción", "me puse a pensar", "me encerré en mí", "no supe qué sentir","tengo sueño",
+    "estoy cansada","quede frio","esoty calmado","soy reservado","me aguante","me calle el hosico"
+
+  ],
+  "Nostálgico": [
+    "extrañé", "recordé", "me acordé", "añoré", "nostalgia", "melancolía", "me hizo pensar",
+    "recordando", "volví al pasado", "miré fotos", "me dio sentimiento", "me puse sentimental",
+    "pensé en antes", "quise volver a...", "me hizo falta", "me recordó a", "regresé en el tiempo",
+    "me dio tristeza bonita", "me conmovió", "me dio ternura","escuché una canción vieja", "me acordé de ti", "vi algo que me recordó a antes",
+    "me pegó la nostalgia", "volví a sentir como antes", "me movió el corazón","ya no es como antes","ya no me trata igual",
+    "quise regresar en el tiempo", "extraño esos días", "ya nada es igual", "se me salieron las lágrimas",
+    "me tocó el alma", "me hizo llorar bonito", "me puse pensativo", "lo llevo en el corazón","senti bonito","sentí bonito"
+    ,"me acorde de ti"
+  ],
+  "Confundido": [
+    "confundido", "no entiendo", "no sé", "me perdí", "no supe qué hacer", "no sabía",
+    "tuve dudas", "no estuve seguro", "incertidumbre", "desconcierto", "inseguro",
+    "me equivoqué", "me costó decidir", "dudé", "me sentí bloqueado", "no lo comprendí",
+    "me pareció raro", "sentí raro", "todo fue confuso", "me confundí", "estaba desorientado",
+    "me revolví", "no tenía claro", "me costó trabajo","no supe","no entendí","no entendi","me confundieron"
+    ,"me pendejearon","me vieron la cara",  "me sacó de onda", "no supe qué pedo", "me quedé en blanco", "no le agarré la onda",
+    "se me cruzaron los cables", "todo me rebasó", "no caché la idea", "me friqueé","me trono el cerebro",
+    "me hice bolas", "no lo procesé", "no me cuadró", "me dijeron una cosa y luego otra",
+    "se me hizo raro", "me brincó la duda", "todo me pareció raro", "me vi lento", "me quedé pasmado"
+  ]
+}
+

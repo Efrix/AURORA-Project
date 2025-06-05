@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="375dp"
+    android:layout_height="507dp"
+    android:background="@color/colorBackground3">
+
+    <TextView
+        android:id="@+id/txtMuestra"
+        android:layout_width="209dp"
+        android:layout_height="86dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="¿Que tal, como te sientes hoy?"
+        android:textAlignment="center"
+        android:textColor="@color/textsColors3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="161dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Hola "
+        android:textSize="22dp"
+        android:textColor="@color/textsColors3"
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/logo" />
+
+    <HorizontalScrollView
+        android:layout_width="319dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp"
+        app:layout_constraintVertical_bias="0.95">
+
+        <LinearLayout
+            android:id="@+id/LayoutDelScroll"
+            android:layout_width="wrap_content"
+            android:background="@color/colorBackground"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnHappy"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonsColors3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feliz" />
+            <Button
+                android:id="@+id/btnSadness"
+                android:layout_marginTop="45dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonsColors3"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Triste" />
+            <Button
+                android:id="@+id/btnAngry"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonsColors3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enojado" />
+            <Button
+                android:id="@+id/btnSerious"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonsColors3"
+                android:layout_marginTop="45dp"
+                android:layout_height="wrap_content"
+                android:text="Serio" />
+            <Button
+                android:id="@+id/btnNostalgic"
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonsColors3"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:text="Nostalgico" />
+            <Button
+                android:id="@+id/btnConfused"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonsColors3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confundido" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

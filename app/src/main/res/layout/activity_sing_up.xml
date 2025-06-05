@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".SingUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="73dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtSingUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:text="REGISTRO"
+        android:textColor="@color/textsColors"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+
+    <EditText
+        android:id="@+id/SUName"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:background="@color/colorBackground3"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textColor="@color/textsColors2"
+        android:textColorHint="@color/textsColors3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/SUUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <EditText
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:background="@color/colorBackground3"
+        android:id="@+id/SUUser"
+        android:textColor="@color/textsColors2"
+        android:textColorHint="@color/textsColors3"
+        android:layout_marginBottom="28dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/adlam_display"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/SUEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/SUPass"
+        android:textColor="@color/textsColors2"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:background="@color/colorBackground3"
+        android:textColorHint="@color/textsColors3"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/SUConfPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/SUConfPass"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="196dp"
+        android:background="@color/colorBackground3"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="@string/confirmPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/textsColors2"
+        android:textColorHint="@color/textsColors3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/SUAge"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:background="@color/colorBackground3"
+        android:fontFamily="@font/adlam_display"
+        android:textColor="@color/textsColors2"
+        android:textColorHint="@color/textsColors3"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/SUGener"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/SUGener"
+        android:layout_width="214dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="13dp"
+        android:background="@color/colorBackground3"
+        android:fontFamily="@font/adlam_display"
+        android:text="S"
+        android:textColor="@color/textsColors2"
+        app:layout_constraintBottom_toTopOf="@+id/SUPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNextSing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/buttonsColors1"
+        android:fontFamily="@font/adlam_display"
+        android:text="Registrarse "
+        android:textColor="#FFF6F6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/SUEmail"
+        android:fontFamily="@font/adlam_display"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:background="@color/colorBackground3"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:textColorHint="@color/textsColors3"
+        android:hint="@string/email"
+        android:textColor="@color/textsColors2"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/SUAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/IMGreturn"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@drawable/btnreturn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

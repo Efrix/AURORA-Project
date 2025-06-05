@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="73dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.070"
+        app:srcCompat="@drawable/logo" />
+    <!-- res/layout/activity_main.xml -->
+    <RelativeLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <!-- Aquí iría el contenido principal -->
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="375dp"
+            android:layout_height="507dp"
+            android:layout_above="@id/bottom_navigation"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="4dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBackground2"
+            app:itemActiveIndicatorStyle="@style/MyBottomNavActiveIndicator"
+            app:itemTextAppearanceActive="@style/BottomNavTextStyle"
+            app:itemTextAppearanceInactive="@style/BottomNavTextStyle"
+            app:itemTextColor="@color/textsColors3"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav_menu" />
+
+
+
+        <TextView
+            android:id="@+id/txtHomeUser"
+            android:layout_width="168dp"
+            android:layout_height="101dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Hola usuario"
+            android:textAlignment="center"
+            android:textColor="@color/textsColors"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

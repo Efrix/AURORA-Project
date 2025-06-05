@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    tools:context=".AngryEmotion">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="73dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtAngry"
+        android:layout_width="193dp"
+        android:layout_height="89dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="¿TE SIENTES ENOJADO?"
+        android:textAlignment="center"
+        android:textColor="@color/textsColors"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/txtAbout"
+        android:layout_width="330dp"
+        android:layout_height="74dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="Cuentame un poco mas, sobre como te sientes"
+        android:textColor="@color/textsColors"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <EditText
+        android:id="@+id/editTextEmotion"
+        android:layout_width="354dp"
+        android:layout_height="99dp"
+        android:gravity="top|start"
+        android:textColor="@color/textsColors3"
+        android:textColorHint="@color/textsColors2"
+        android:background="@color/colorBackground3"
+        android:fontFamily="@font/adlam_display"
+        android:hint="Escribe aquí lo que sientes..."
+        android:inputType="textMultiLine"
+        android:maxLength="250"
+        android:maxLines="10"
+        android:minLines="3"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/charCountText"
+        android:textColor="@color/textsColors3"
+        android:background="@color/colorBackground3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="0 / 250"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <Button
+        android:id="@+id/btnAnalizarEmocion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/buttonsColors3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

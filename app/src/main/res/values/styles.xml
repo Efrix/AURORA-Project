@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/styles.xml -->
+    <style name="BottomNavTextStyle" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/adlam_display</item> <!-- o "sans-serif-medium" -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textsColors3</item> <!-- color opcional -->
+    </style>
+    <style name="MyBottomNavActiveIndicator" parent="">
+        <item name="android:background">#3C3C63</item> <!-- color de fondo del indicador -->
+        <item name="shapeAppearanceOverlay">@style/MyRoundedShape</item> <!-- sin 'android:' -->
+    </style>
+
+
+    <style name="MyRoundedShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>
