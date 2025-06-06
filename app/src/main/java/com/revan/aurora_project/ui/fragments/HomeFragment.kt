@@ -1,4 +1,4 @@
-package com.revan.aurora_project
+package com.revan.aurora_project.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.revan.aurora_project.R
+import com.revan.aurora_project.ui.emotion.SeriousEmotion
 import com.revan.aurora_project.ui.emotion.AngryEmotion
 import com.revan.aurora_project.ui.emotion.ConfusedEmotion
 import com.revan.aurora_project.ui.emotion.HappyEmotion
@@ -35,7 +37,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
         val btnSerious=view.findViewById<Button>(R.id.btnSerious)
         btnSerious.setOnClickListener {
-            val serEmo=Intent(requireContext(),SeriousEmotion::class.java)
+            val serEmo=Intent(requireContext(), SeriousEmotion::class.java)
             startActivity(serEmo)
         }
         val btnNostalgic=view.findViewById<Button>(R.id.btnNostalgic)

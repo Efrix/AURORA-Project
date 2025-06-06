@@ -13,22 +13,22 @@
         android:theme="@style/Theme.AURORAProject"
         tools:targetApi="31">
         <activity
-            android:name=".ui.emotion.MoreConfused"
+            android:name=".ui.moreEmotion.MoreConfused"
             android:exported="false" />
         <activity
-            android:name=".ui.emotion.MoreNostalgic"
+            android:name=".ui.moreEmotion.MoreNostalgic"
             android:exported="false" />
         <activity
-            android:name=".MoreSerious"
+            android:name=".ui.moreEmotion.MoreSerious"
             android:exported="false" />
         <activity
-            android:name=".ui.emotion.MoreAngry"
+            android:name=".ui.moreEmotion.MoreAngry"
             android:exported="false" />
         <activity
-            android:name=".ui.emotion.MoreSadness"
+            android:name=".ui.moreEmotion.MoreSadness"
             android:exported="false" />
         <activity
-            android:name=".ui.emotion.MoreHappy"
+            android:name=".ui.moreEmotion.MoreHappy"
             android:exported="false" />
         <activity
             android:name=".ui.emotion.ConfusedEmotion"
@@ -37,7 +37,7 @@
             android:name=".ui.emotion.NostalgicEmotion"
             android:exported="false" />
         <activity
-            android:name=".SeriousEmotion"
+            android:name=".ui.emotion.SeriousEmotion"
             android:exported="false" />
         <activity
             android:name=".ui.emotion.SadnessEmotion"
@@ -53,13 +53,13 @@
             android:exported="false"
             android:label="@string/title_activity_home" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.home.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SingUpActivity"
+            android:name=".ui.home.SingUpActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashAURORA"
+            android:name=".ui.home.SplashAURORA"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,7 +68,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.home.MainActivity"
             android:exported="true" />
 
         <meta-data

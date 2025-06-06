@@ -1,4 +1,4 @@
-package com.revan.aurora_project.ui.emotion
+package com.revan.aurora_project.ui.moreEmotion
 
 import android.os.Bundle
 import android.widget.ImageView
@@ -10,23 +10,23 @@ import androidx.core.view.WindowInsetsCompat
 import com.revan.aurora_project.R
 import com.revan.aurora_project.domain.model.Emotion
 
-class MoreNostalgic : AppCompatActivity() {
+class MoreSadness : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_more_nostalgic)
+        setContentView(R.layout.activity_more_sadness)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val imageViewEmotionNostalgic=findViewById<ImageView>(R.id.imageViewEmotionNostalgic)
-        val textViewEmotionNameNostalgic=findViewById<TextView>(R.id.textViewEmotionNameNostagic)
-        val textViewEmotionDescNostalgic=findViewById<TextView>(R.id.textViewEmotionDescNostalgic)
+        val imageViewEmotionSad=findViewById<ImageView>(R.id.imageViewEmotionSad)
+        val textViewEmotionNameSad=findViewById<TextView>(R.id.textViewEmotionNameSad)
+        val textViewEmotionDescSad=findViewById<TextView>(R.id.textViewEmotionDescSad)
 
         val emotion =intent.getParcelableExtra<Emotion>("emotion")
-        textViewEmotionNameNostalgic.text = emotion?.name
-        textViewEmotionDescNostalgic.text = emotion?.description
-        imageViewEmotionNostalgic.setImageResource(emotion?.imageResId ?: R.drawable.logo)
+        textViewEmotionNameSad.text = emotion?.name
+        textViewEmotionDescSad.text = emotion?.description
+        imageViewEmotionSad.setImageResource(emotion?.imageResId ?: R.drawable.logo)
     }
 }

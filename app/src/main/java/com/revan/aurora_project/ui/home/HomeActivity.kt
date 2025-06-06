@@ -5,10 +5,10 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.revan.aurora_project.HomeFragment
-import com.revan.aurora_project.ProfileFragment
+import com.revan.aurora_project.ui.fragments.HomeFragment
+import com.revan.aurora_project.ui.fragments.ProfileFragment
 import com.revan.aurora_project.R
-import com.revan.aurora_project.SearchFragment
+import com.revan.aurora_project.ui.fragments.SearchFragment
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

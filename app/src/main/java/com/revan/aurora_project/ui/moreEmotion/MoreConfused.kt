@@ -1,4 +1,4 @@
-package com.revan.aurora_project.ui.emotion
+package com.revan.aurora_project.ui.moreEmotion
 
 import android.os.Bundle
 import android.widget.ImageView

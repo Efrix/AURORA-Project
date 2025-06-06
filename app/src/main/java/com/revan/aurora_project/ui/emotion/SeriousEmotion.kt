@@ -1,4 +1,4 @@
-package com.revan.aurora_project
+package com.revan.aurora_project.ui.emotion
 
 import android.content.Context
 import android.content.Intent
@@ -13,8 +13,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.revan.aurora_project.R
 import com.revan.aurora_project.domain.model.Emotion
-import com.revan.aurora_project.ui.emotion.MoreNostalgic
+import com.revan.aurora_project.ui.moreEmotion.MoreNostalgic
 import org.json.JSONObject
 import java.io.BufferedReader
 
