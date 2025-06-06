@@ -9,24 +9,25 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.revan.aurora_project.R
 import com.revan.aurora_project.domain.model.Emotion
+import org.w3c.dom.Text
 
-class MoreHappy : AppCompatActivity() {
+class MoreAngry : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_more_happy)
+        setContentView(R.layout.activity_more_angry)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val imageViewEmotionHappy=findViewById<ImageView>(R.id.imageViewEmotionHappy)
-        val textViewEmotionNameHappy=findViewById<TextView>(R.id.textViewEmotionNameHappy)
-        val  textViewEmotionDescHappy=findViewById<TextView>(R.id.textViewEmotionDescHappy)
-        val emotion = intent.getParcelableExtra<Emotion>("emotion")
-        textViewEmotionNameHappy.text = emotion?.name
-        textViewEmotionDescHappy.text = emotion?.description
-        imageViewEmotionHappy.setImageResource(emotion?.imageResId ?: R.drawable.logo)
+        val imageViewEmotionAngry=findViewById<ImageView>(R.id.imageViewEmotionAngry)
+        val textViewEmotionNameAngry=findViewById<TextView>(R.id.textViewEmotionNameAngry)
+        val textViewEmotionDescAngry=findViewById<TextView>(R.id.textViewEmotionDescAngry)
 
+        val emotion =intent.getParcelableExtra<Emotion>("emotion")
+        textViewEmotionNameAngry.text = emotion?.name
+        textViewEmotionDescAngry.text = emotion?.description
+        imageViewEmotionAngry.setImageResource(emotion?.imageResId ?: R.drawable.logo)
     }
 }

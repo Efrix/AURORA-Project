@@ -6,7 +6,11 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.revan.aurora_project.ui.emotion.AngryEmotion
+import com.revan.aurora_project.ui.emotion.ConfusedEmotion
 import com.revan.aurora_project.ui.emotion.HappyEmotion
+import com.revan.aurora_project.ui.emotion.NostalgicEmotion
+import com.revan.aurora_project.ui.emotion.SadnessEmotion
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -21,12 +25,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
         val btnSadness=view.findViewById<Button>(R.id.btnSadness)
         btnSadness.setOnClickListener {
-            val sadEmo=Intent(requireContext(),SadnessEmotion::class.java)
+            val sadEmo=Intent(requireContext(), SadnessEmotion::class.java)
             startActivity(sadEmo)
         }
         val btnAngry=view.findViewById<Button>(R.id.btnAngry)
         btnAngry.setOnClickListener {
-            val angEmo=Intent(requireContext(),AngryEmotion::class.java)
+            val angEmo=Intent(requireContext(), AngryEmotion::class.java)
             startActivity(angEmo)
         }
         val btnSerious=view.findViewById<Button>(R.id.btnSerious)
@@ -36,12 +40,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
         val btnNostalgic=view.findViewById<Button>(R.id.btnNostalgic)
         btnNostalgic.setOnClickListener {
-            val nosEmo=Intent(requireContext(),NostalgicEmotion::class.java)
+            val nosEmo=Intent(requireContext(), NostalgicEmotion::class.java)
             startActivity(nosEmo)
         }
         val btnConfused=view.findViewById<Button>(R.id.btnConfused)
         btnConfused.setOnClickListener {
-            val conEmo=Intent(requireContext(),ConfusedEmotion::class.java)
+            val conEmo=Intent(requireContext(), ConfusedEmotion::class.java)
             startActivity(conEmo)
         }
 

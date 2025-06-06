@@ -13,37 +13,37 @@
         android:theme="@style/Theme.AURORAProject"
         tools:targetApi="31">
         <activity
-            android:name=".MoreConfused"
+            android:name=".ui.emotion.MoreConfused"
             android:exported="false" />
         <activity
-            android:name=".MoreNostalgic"
+            android:name=".ui.emotion.MoreNostalgic"
             android:exported="false" />
         <activity
             android:name=".MoreSerious"
             android:exported="false" />
         <activity
-            android:name=".MoreAngry"
+            android:name=".ui.emotion.MoreAngry"
             android:exported="false" />
         <activity
-            android:name=".MoreSadness"
+            android:name=".ui.emotion.MoreSadness"
             android:exported="false" />
         <activity
             android:name=".ui.emotion.MoreHappy"
             android:exported="false" />
         <activity
-            android:name=".ConfusedEmotion"
+            android:name=".ui.emotion.ConfusedEmotion"
             android:exported="false" />
         <activity
-            android:name=".NostalgicEmotion"
+            android:name=".ui.emotion.NostalgicEmotion"
             android:exported="false" />
         <activity
             android:name=".SeriousEmotion"
             android:exported="false" />
         <activity
-            android:name=".SadnessEmotion"
+            android:name=".ui.emotion.SadnessEmotion"
             android:exported="false" />
         <activity
-            android:name=".AngryEmotion"
+            android:name=".ui.emotion.AngryEmotion"
             android:exported="false" />
         <activity
             android:name=".ui.emotion.HappyEmotion"

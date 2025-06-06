@@ -13,6 +13,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.revan.aurora_project.domain.model.Emotion
+import com.revan.aurora_project.ui.emotion.MoreNostalgic
 import org.json.JSONObject
 import java.io.BufferedReader
 
@@ -83,13 +85,21 @@ class SeriousEmotion : AppCompatActivity() {
 
         btnAnalizar.setOnClickListener {
             val texto = editText.text.toString()
-            val emocion = detectarEmocionDesdeJson(texto, emocionesMap)
-            when (emocion) {
-                "Serio" -> startActivity(Intent(this, MoreSerious::class.java))
-                else -> Toast.makeText(this, "Creo que no estás serio, intenta con otra emoción 😕", Toast.LENGTH_SHORT)
+            val emocionDetectada = detectarEmocionDesdeJson(texto, emocionesMap)
+
+            val emotion = Emotion(
+                name=emocionDetectada,
+                description = texto,
+                imageResId = R.drawable.ic_launcher_background
+            )
+            if (emocionDetectada=="Serio"){
+                val intent= Intent(this, MoreNostalgic::class.java)
+                intent.putExtra("emotion", emotion)
+                startActivity(intent)
+            }else{
+                Toast.makeText(this, "¿Seguro que estás serio? intenta con otra emoción 😕", Toast.LENGTH_SHORT)
                     .show()
             }
-
 
         }
 

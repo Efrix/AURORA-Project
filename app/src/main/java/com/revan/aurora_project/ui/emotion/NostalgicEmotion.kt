@@ -1,4 +1,4 @@
-package com.revan.aurora_project
+package com.revan.aurora_project.ui.emotion
 
 import android.content.Context
 import android.content.Intent
@@ -13,6 +13,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.revan.aurora_project.R
+import com.revan.aurora_project.domain.model.Emotion
 import org.json.JSONObject
 import java.io.BufferedReader
 
@@ -83,10 +85,19 @@ class NostalgicEmotion : AppCompatActivity() {
 
         btnAnalizar.setOnClickListener {
             val texto = editText.text.toString()
-            val emocion = detectarEmocionDesdeJson(texto, emocionesMap)
-            when (emocion) {
-                "Nostálgico" -> startActivity(Intent(this, MoreNostalgic::class.java))
-                else -> Toast.makeText(this, "Creo que no estás nostalgico, intenta con otra emoción 😕", Toast.LENGTH_SHORT)
+            val emocionDetectada = detectarEmocionDesdeJson(texto, emocionesMap)
+
+            val emotion = Emotion(
+                name=emocionDetectada,
+                description = texto,
+                imageResId = R.drawable.ic_launcher_background
+            )
+            if (emocionDetectada=="Nostalgico"){
+                val intent= Intent(this, MoreNostalgic::class.java)
+                intent.putExtra("emotion", emotion)
+                startActivity(intent)
+            }else{
+                Toast.makeText(this, "Creo que no estás nostalgico, intenta con otra emoción 😕", Toast.LENGTH_SHORT)
                     .show()
             }
 

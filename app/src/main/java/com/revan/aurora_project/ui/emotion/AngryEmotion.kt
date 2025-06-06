@@ -1,4 +1,4 @@
-package com.revan.aurora_project
+package com.revan.aurora_project.ui.emotion
 
 import android.content.Context
 import android.content.Intent
@@ -13,14 +13,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.revan.aurora_project.R
+import com.revan.aurora_project.domain.model.Emotion
 import org.json.JSONObject
 import java.io.BufferedReader
 
-class ConfusedEmotion : AppCompatActivity() {
+class AngryEmotion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_confused_emotion)
+        setContentView(R.layout.activity_angry_emotion)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -80,18 +82,27 @@ class ConfusedEmotion : AppCompatActivity() {
         }
 // Evento del botón
         val emocionesMap = cargarPalabrasClave(this)
-
         btnAnalizar.setOnClickListener {
             val texto = editText.text.toString()
-            val emocion = detectarEmocionDesdeJson(texto, emocionesMap)
-            when (emocion) {
-                "Confundido" -> startActivity(Intent(this, MoreConfused::class.java))
-                else -> Toast.makeText(this, "Creo que no estás confundido, intenta con otra emoción 😕", Toast.LENGTH_SHORT)
+            val emocionDetectada = detectarEmocionDesdeJson(texto, emocionesMap)
+
+            val emotion =Emotion(
+                name=emocionDetectada,
+                description = texto,
+                imageResId = R.drawable.ic_launcher_background
+            )
+            if (emocionDetectada=="Enojado"){
+                val intent= Intent(this, MoreAngry::class.java)
+                intent.putExtra("emotion", emotion)
+                startActivity(intent)
+            }else{
+                Toast.makeText(this, "Creo que no estás enojado, intenta con otra emoción 😕", Toast.LENGTH_SHORT)
                     .show()
             }
 
-
         }
+
+
 
     }
 }

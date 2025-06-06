@@ -19,6 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.183"
         app:srcCompat="@drawable/logo" />
+    <ImageView
+        android:id="@+id/imageViewEmotionSeroius"
+        android:layout_width="73dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183"
+        app:srcCompat="@drawable/logo" />
+
 
     <TextView
         android:id="@+id/txtAngry"
@@ -50,6 +61,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.482" />
+    <TextView
+        android:id="@+id/textViewEmotionNameSerious"
+        android:layout_width="330dp"
+        android:layout_height="74dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="..."
+        android:textColor="@color/textsColors"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <TextView
+        android:id="@+id/textViewEmotionDescSerious"
+        android:layout_width="330dp"
+        android:layout_height="74dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="..."
+        android:textColor="@color/textsColors"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
 
     <Button
         android:id="@+id/btnAnalizarEmocion"
