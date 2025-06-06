@@ -28,7 +28,7 @@
             android:name=".MoreSadness"
             android:exported="false" />
         <activity
-            android:name=".MoreHappy"
+            android:name=".ui.emotion.MoreHappy"
             android:exported="false" />
         <activity
             android:name=".ConfusedEmotion"
@@ -46,10 +46,10 @@
             android:name=".AngryEmotion"
             android:exported="false" />
         <activity
-            android:name=".HappyEmotion"
+            android:name=".ui.emotion.HappyEmotion"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.home.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home" />
         <activity

@@ -1,4 +1,4 @@
-package com.revan.aurora_project
+package com.revan.aurora_project.ui.emotion
 
 import android.content.Context
 import android.content.Intent
@@ -13,6 +13,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.revan.aurora_project.R
+import com.revan.aurora_project.domain.model.Emotion
 import org.json.JSONObject
 import java.io.BufferedReader
 
@@ -83,20 +85,23 @@ class HappyEmotion : AppCompatActivity() {
 
         btnAnalizar.setOnClickListener {
             val texto = editText.text.toString()
-            val emocion = detectarEmocionDesdeJson(texto, emocionesMap)
-            when (emocion) {
-                "Feliz" -> startActivity(Intent(this, MoreHappy::class.java))
+            val emocionDetectada = detectarEmocionDesdeJson(texto, emocionesMap)
 
-                else -> Toast.makeText(this, "Creo que no estás feliz, intenta con otra emoción 😕", Toast.LENGTH_SHORT)
+            val emotion = Emotion(
+                name = emocionDetectada,
+                description = texto,
+                imageResId = R.drawable.ic_launcher_background // puedes cambiar esto según la emoción detectada
+            )
+
+            if (emocionDetectada == "Feliz") {
+                val intent = Intent(this, MoreHappy::class.java)
+                intent.putExtra("emotion", emotion) // necesitas hacer Emotion Parcelable
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Creo que no estás feliz, intenta con otra emoción 😕", Toast.LENGTH_SHORT)
                     .show()
             }
-print("Hello world")
-
-            print("cambio")
-            print("cambio")
-            print("cambio")
-            print("cambio")
-            print("cambio")
         }
+
     }
 }

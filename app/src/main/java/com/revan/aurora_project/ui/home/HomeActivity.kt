@@ -1,14 +1,14 @@
-package com.revan.aurora_project
+package com.revan.aurora_project.ui.home
 
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.revan.aurora_project.HomeFragment
+import com.revan.aurora_project.ProfileFragment
+import com.revan.aurora_project.R
+import com.revan.aurora_project.SearchFragment
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

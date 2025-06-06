@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.revan.aurora_project.ui.emotion.HappyEmotion
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         val btnHappy= view.findViewById<Button>(R.id.btnHappy)
         btnHappy.setOnClickListener {
-    val feliEmo=Intent(requireContext(),HappyEmotion::class.java)
+    val feliEmo=Intent(requireContext(), HappyEmotion::class.java)
             startActivity(feliEmo)
         }
         val btnSadness=view.findViewById<Button>(R.id.btnSadness)

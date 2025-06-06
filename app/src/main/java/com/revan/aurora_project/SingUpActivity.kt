@@ -3,11 +3,8 @@ package com.revan.aurora_project
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Patterns
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
@@ -19,6 +16,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.revan.aurora_project.ui.home.HomeActivity
 
 class SingUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
